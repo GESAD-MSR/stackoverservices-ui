@@ -1,11 +1,24 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 
+import AddTechnology from '@/views/technology/Add.vue'
+import ListTechnology from '@/views/technology/List.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/add',
+    name: 'Add',
+    component: AddTechnology
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: ListTechnology
   },
   {
     path: '/about',
